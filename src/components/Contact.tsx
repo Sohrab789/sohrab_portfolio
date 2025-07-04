@@ -1,6 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, ArrowRight } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Github, Linkedin, ArrowRight, Send } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -21,29 +24,6 @@ const Contact = () => {
       value: "Chennai, India",
       href: "#",
       icon: "📍"
-    }
-  ];
-
-  const services = [
-    {
-      title: "Path Planning & Control Algorithm Design",
-      description: "Custom algorithms for autonomous navigation and control systems",
-      icon: "🎯"
-    },
-    {
-      title: "Machine Learning & Data Analytics",
-      description: "Advanced ML solutions for complex data analysis and prediction",
-      icon: "🤖"
-    },
-    {
-      title: "Web-based Simulation Dashboards",
-      description: "Interactive dashboards using HTML, CSS, and Flask frameworks",
-      icon: "📊"
-    },
-    {
-      title: "Deep Reinforcement Learning for Robotics",
-      description: "Cutting-edge RL implementations for robotic systems",
-      icon: "🚀"
     }
   ];
 
@@ -116,34 +96,62 @@ const Contact = () => {
             </Card>
           </div>
 
-          {/* Services */}
+          {/* Contact Form */}
           <div className="animate-slide-in-right">
             <Card className="p-8 bg-white/10 backdrop-blur-lg border-white/20 hover:border-white/30 transition-all">
-              <h3 className="text-2xl font-semibold mb-6 text-white">Services I Offer</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-white">Send a Message</h3>
               
-              <div className="space-y-4">
-                {services.map((service, index) => (
-                  <div 
-                    key={index}
-                    className="p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-all hover-lift"
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="text-xl">{service.icon}</span>
-                      <div>
-                        <h4 className="font-semibold text-white mb-1">{service.title}</h4>
-                        <p className="text-gray-300 text-sm">{service.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8">
-                <Button variant="hero" size="lg" className="w-full group">
-                  Start a Project
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <form className="space-y-6">
+                <div>
+                  <Label htmlFor="name" className="text-sm font-medium text-gray-300">Name</Label>
+                  <Input 
+                    id="name" 
+                    type="text" 
+                    placeholder="Your full name"
+                    className="mt-1 bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="email" className="text-sm font-medium text-gray-300">Email</Label>
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    placeholder="your.email@example.com"
+                    className="mt-1 bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="subject" className="text-sm font-medium text-gray-300">Subject</Label>
+                  <Input 
+                    id="subject" 
+                    type="text" 
+                    placeholder="What's this about?"
+                    className="mt-1 bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="message" className="text-sm font-medium text-gray-300">Message</Label>
+                  <Textarea 
+                    id="message" 
+                    placeholder="Tell me about your project or inquiry..."
+                    rows={5}
+                    className="mt-1 bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+                  />
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full group"
+                >
+                  <Send className="mr-2 h-4 w-4" />
+                  Send Message
                 </Button>
-              </div>
+              </form>
             </Card>
           </div>
         </div>

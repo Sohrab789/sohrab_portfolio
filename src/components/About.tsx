@@ -49,6 +49,11 @@ const About = () => {
                   badminton, and networking. These experiences have shaped my versatile approach 
                   to problem-solving and team collaboration.
                 </p>
+                <p>
+                  Currently working as an AI Engineer at Centific, I continue to push the boundaries 
+                  of artificial intelligence in marine robotics, combining theoretical knowledge with 
+                  practical applications to solve real-world challenges in autonomous marine systems.
+                </p>
               </div>
             </Card>
           </div>

@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="text-center lg:text-left animate-fade-in">
             <div className="inline-block mb-4">
               <span className="text-accent text-sm font-medium tracking-wider uppercase">
-                AI Researcher & Marine Robotics Expert
+                AI Researcher
               </span>
             </div>
             

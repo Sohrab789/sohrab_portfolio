@@ -30,30 +30,37 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Personal Story */}
+          {/* Professional Experience */}
           <div className="animate-slide-in-left">
             <Card className="p-8 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all hover-lift">
-              <h3 className="text-2xl font-semibold mb-6 text-primary">My Journey</h3>
-              <div className="space-y-4 text-foreground/80">
-                <p>
-                  I'm a dedicated Marine Robotics researcher pursuing my M.S. in Ocean Engineering 
-                  at IIT Madras, where I combine my passion for AI with cutting-edge marine technology.
-                </p>
-                <p>
-                  My academic journey began with a B.Tech in Civil Engineering from Jamia Millia Islamia, 
-                  achieving a remarkable CGPA of 9.22. This strong foundation led me to explore the 
-                  fascinating intersection of artificial intelligence and marine systems.
-                </p>
-                <p>
-                  Beyond academics, I'm deeply involved in leadership roles and enjoy traveling, 
-                  badminton, and networking. These experiences have shaped my versatile approach 
-                  to problem-solving and team collaboration.
-                </p>
-                <p>
-                  Currently working as an AI Engineer at Centific, I continue to push the boundaries 
-                  of artificial intelligence in marine robotics, combining theoretical knowledge with 
-                  practical applications to solve real-world challenges in autonomous marine systems.
-                </p>
+              <h3 className="text-2xl font-semibold mb-6 text-primary">Professional Experience</h3>
+              <div className="space-y-6">
+                <div className="border-l-2 border-primary/30 pl-4">
+                  <h4 className="font-semibold text-foreground text-lg">AI Engineer</h4>
+                  <p className="text-primary font-medium">Centific</p>
+                  <p className="text-sm text-muted-foreground mb-2">July 2025 - Present</p>
+                  <p className="text-foreground/80">
+                    Working on cutting-edge AI solutions and machine learning implementations for enterprise clients.
+                  </p>
+                </div>
+                
+                <div className="border-l-2 border-primary/30 pl-4">
+                  <h4 className="font-semibold text-foreground text-lg">Research Scholar</h4>
+                  <p className="text-primary font-medium">MAV LAB, IIT Madras</p>
+                  <p className="text-sm text-muted-foreground mb-2">Jan 2023 - June 2025</p>
+                  <p className="text-foreground/80">
+                    Conducting advanced research in Marine Autonomous Vehicles, focusing on AI-driven control systems and reinforcement learning applications.
+                  </p>
+                </div>
+                
+                <div className="border-l-2 border-primary/30 pl-4">
+                  <h4 className="font-semibold text-foreground text-lg">Digital Learning Solutions Developer</h4>
+                  <p className="text-primary font-medium">Magic EdTech</p>
+                  <p className="text-sm text-muted-foreground mb-2">Jan 2022 - June 2022</p>
+                  <p className="text-foreground/80">
+                    Digital Learning Solutions for Education - Developed innovative digital learning solutions for educational platforms.
+                  </p>
+                </div>
               </div>
             </Card>
           </div>

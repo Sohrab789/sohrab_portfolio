@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
+import profilePicture from "@/assets/profile-picture.png";
 
 const Hero = () => {
   return (
@@ -68,11 +69,13 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-75 blur-xl animate-pulse-glow"></div>
               <div className="absolute inset-4 rounded-full bg-gradient-primary opacity-50 blur-lg"></div>
               
-              {/* Profile image placeholder - replace with actual image */}
+              {/* Profile image */}
               <div className="relative z-10 w-full h-full rounded-full bg-gradient-card border-4 border-primary/50 overflow-hidden shadow-2xl">
-                <div className="w-full h-full bg-muted flex items-center justify-center">
-                  <span className="text-4xl font-bold text-primary">SA</span>
-                </div>
+                <img 
+                  src={profilePicture} 
+                  alt="Mohd Sohrab Ali" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Floating tech elements */}
